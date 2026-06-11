@@ -1,0 +1,32 @@
+# --- Secrets (NEVER commit) ---
+.env
+*.env
+!*.env.example
+backend/.env
+frontend/.env.local
+
+# --- Python ---
+backend/.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Node / Next.js ---
+node_modules/
+frontend/.next/
+frontend/out/
+demo-recorder/node_modules/
+
+# --- Recorded media (large; hosted elsewhere for submission) ---
+demo-recorder/videos/
+*.webm
+*.mp4
+
+# --- OS / editor ---
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Claude Code harness
+.claude/
