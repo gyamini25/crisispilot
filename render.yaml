@@ -1,0 +1,28 @@
+# Render blueprint for the CrisisPilot backend (Docker: Python + Node).
+# Deploy: Render Dashboard → New → Blueprint → pick this repo.
+# Secrets (sync:false) are set in the Render dashboard, not committed.
+services:
+  - type: web
+    name: crisispilot-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: DT_ENVIRONMENT
+        sync: false
+      - key: DT_PLATFORM_TOKEN
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DB
+        value: crisispilot
+      - key: CRISISPILOT_AUTOSTART_SIMULATOR
+        value: "true"
+      - key: CRISISPILOT_INCIDENT_INTERVAL_SECONDS
+        value: "30"
+      - key: CRISISPILOT_USE_ADK
+        value: "true"
