@@ -91,8 +91,7 @@ crisispilot/
 │       ├── api/            # REST + WebSocket
 │       ├── core/           # pub/sub + incident simulator
 │       └── db/             # Mongo-shaped store (in-memory fallback)
-├── frontend/               # Next.js dashboard
-└── demo-recorder/          # Playwright script that records the demo video
+└── frontend/               # Next.js dashboard
 ```
 
 ## License

@@ -15,10 +15,9 @@ backend/.venv/
 node_modules/
 frontend/.next/
 frontend/out/
-demo-recorder/node_modules/
 
-# --- Recorded media (large; hosted elsewhere for submission) ---
-demo-recorder/videos/
+# --- Demo recording tooling + media (kept local, not in repo) ---
+demo-recorder/
 *.webm
 *.mp4
 
