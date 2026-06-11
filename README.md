@@ -4,9 +4,7 @@
 
 When a production incident fires, CrisisPilot spins up a war-room of specialized AI agents that investigate in parallel, correlate telemetry with recent deploys, quantify business impact, synthesize a root cause, and propose remediation — all streaming live to a dashboard, at human-readable cadence.
 
-<!-- TODO: add hosted URL and demo video link before submission -->
-- **Live demo:** _<add hosted URL>_
-- **Demo video:** _<add ~3 min video URL>_
+- **Live demo:** https://crisispilot.vercel.app
 
 ## Hackathon track & required integrations
 

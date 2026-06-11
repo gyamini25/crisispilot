@@ -30,3 +30,6 @@ demo-recorder/videos/
 
 # Claude Code harness
 .claude/
+
+# Internal demo script / pitch notes (keep private)
+DEMO_SCRIPT.md
